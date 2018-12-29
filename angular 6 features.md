@@ -25,7 +25,7 @@ Angular 6 now supports the configuration of navigation URLs within the Service W
 
 ## **3. Bye, Bye Template Element**
 
-The <template> element was depreciated one year ago when Angular 4 was launched. Now it’s time to say goodbye to <template> because it is now removed from Angular 6 framework. Instead of using <template>, we now need to use <ng-tempalate>.
+The `<template>` element was depreciated one year ago when Angular 4 was launched. Now it’s time to say goodbye to `<template>` because it is now removed from Angular 6 framework. Instead of using `<template>,` we now need to use `<ng-tempalate>.`
 
 ## **5. Ivy: New Rendering Engine**
 
@@ -92,13 +92,13 @@ Angular 6 moved from modules referencing services to services referencing module
 
 There is a new way to define an injectable service in Angular 6. With this new way, we can register a provider directly inside the `@Injectable()` decorator, using the new `providedIn`  attribute. It accepts ‘root’ as a value or any module name from our application. When we use ‘root,’ it means this injectable will be registered as a singleton object in the application and we don’t need to add it to the providers of the root modules. In the same way, if we use `provideIdIn:LoginModule`, then injectable is registered as a provider of the `LoginModules`  without adding it to the providers of the modules.
 
-@Injectable({
-
- providedIn: 'root'
-
-})
-
-export class UserService {}
+    @Injectable({
+    
+     providedIn: 'root'
+    
+    })
+    
+    export class UserService {}
 
 So, in the above section, we discuss most important features of the Angular 6. Apart for these, there are also several features, like:
 
@@ -113,5 +113,5 @@ So, in the above section, we discuss most important features of the Angular 6. A
 9.  The Angular team has decided to extend the long-term support (LTE) to all major releases starting with v4.
 10.  Web pack module bundlers have been updated to version 4 and have Angular CLI support.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODgxMDQ1NF19
+eyJoaXN0b3J5IjpbLTQzODgxODIwMCwxNjM4ODEwNDU0XX0=
 -->
